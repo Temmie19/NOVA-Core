@@ -6,7 +6,7 @@ plugins {
 	id "com.github.johnrengelman.shadow" version "1.2.3"
 }
 
-apply from: "https://raw.githubusercontent.com/Temmie19/NOVA-Gradle/master/shared-scripts/common.gradle"
+apply from: "https://raw.githubusercontent.com/Temmie19/NOVA-Gradle/master/shared-scripts/java.gradle"
 
 dependencies {
 	api 'com.google.guava:guava:18.0'
