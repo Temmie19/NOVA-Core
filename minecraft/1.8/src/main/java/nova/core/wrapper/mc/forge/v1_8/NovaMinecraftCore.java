@@ -35,7 +35,7 @@ public class NovaMinecraftCore implements IFMLLoadingPlugin {
 
 	@Override
 	public String getModContainerClass() {
-		return "nova.core.wrapper.mc.forge.v18.NovaMinecraftPreloader";
+		return "nova.core.wrapper.mc.forge.v1_8.NovaMinecraftPreloader";
 	}
 
 	@Override

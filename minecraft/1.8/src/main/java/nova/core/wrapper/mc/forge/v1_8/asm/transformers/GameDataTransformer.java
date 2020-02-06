@@ -57,7 +57,7 @@ public class GameDataTransformer implements Transformer {
 
 		InsnList list = new InsnList();
 		list.add(new VarInsnNode(ALOAD, 4));
-		list.add(new MethodInsnNode(INVOKESTATIC, "nova/core/wrapper/mc/forge/v18/asm/StaticForwarder", "isNovaPrefix", "(Ljava/lang/String;)Z", false));
+		list.add(new MethodInsnNode(INVOKESTATIC, "nova/core/wrapper/mc/forge/v1_8/asm/StaticForwarder", "isNovaPrefix", "(Ljava/lang/String;)Z", false));
 		list.add(new JumpInsnNode(IFNE, prev.label));
 
 		method.instructions.insert(prev, list);
@@ -87,7 +87,7 @@ public class GameDataTransformer implements Transformer {
 
 		InsnList list = new InsnList();
 		list.add(new VarInsnNode(ALOAD, 2));
-		list.add(new MethodInsnNode(INVOKESTATIC, "nova/core/wrapper/mc/forge/v18/asm/StaticForwarder", "hasNovaPrefix", "(Ljava/lang/String;)Z", false));
+		list.add(new MethodInsnNode(INVOKESTATIC, "nova/core/wrapper/mc/forge/v1_8/asm/StaticForwarder", "hasNovaPrefix", "(Ljava/lang/String;)Z", false));
 		list.add(new JumpInsnNode(IFNE, prev.label));
 
 		method.instructions.insert(prev, list);
@@ -117,7 +117,7 @@ public class GameDataTransformer implements Transformer {
 
 		InsnList list = new InsnList();
 		list.add(new VarInsnNode(ALOAD, 2));
-		list.add(new MethodInsnNode(INVOKESTATIC, "nova/core/wrapper/mc/forge/v18/asm/StaticForwarder", "hasNovaPrefix", "(Ljava/lang/String;)Z", false));
+		list.add(new MethodInsnNode(INVOKESTATIC, "nova/core/wrapper/mc/forge/v1_8/asm/StaticForwarder", "hasNovaPrefix", "(Ljava/lang/String;)Z", false));
 		list.add(new JumpInsnNode(IFNE, prev.label));
 
 		method.instructions.insert(prev, list);
