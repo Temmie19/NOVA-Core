@@ -25,7 +25,7 @@ dependencies {
 
 jar {
 	manifest {
-		attributes 'FMLCorePlugin': 'nova.core.wrapper.mc.forge.v17.NovaMinecraftCore'
+		attributes 'FMLCorePlugin': 'nova.core.wrapper.mc.forge.v_1_7_10.NovaMinecraftCore'
 		attributes 'FMLCorePluginContainsFMLMod': 'true'
 		attributes 'FMLAT': 'nova_at.cfg'
 	}
@@ -35,7 +35,7 @@ task deobfJar(type: Jar) {
 	from sourceSets.main.output
 	classifier = 'deobf'
 	manifest {
-		attributes 'FMLCorePlugin': 'nova.core.wrapper.mc.forge.v17.NovaMinecraftCore'
+		attributes 'FMLCorePlugin': 'nova.core.wrapper.mc.forge.v_1_7_10.NovaMinecraftCore'
 		attributes 'FMLCorePluginContainsFMLMod': 'true'
 		attributes 'FMLAT': 'nova_at.cfg'
 	}

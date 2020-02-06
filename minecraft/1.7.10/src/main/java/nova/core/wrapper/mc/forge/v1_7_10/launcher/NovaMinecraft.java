@@ -79,7 +79,7 @@ public class NovaMinecraft implements ForgeLoadable {
 	public static final String name = "NOVA";
 	public static final String mcId = "minecraft";
 
-	@SidedProxy(clientSide = "nova.core.wrapper.mc.forge.v17.launcher.ClientProxy", serverSide = "nova.core.wrapper.mc.forge.v17.launcher.CommonProxy")
+	@SidedProxy(clientSide = "nova.core.wrapper.mc.forge.v_1_7_10.launcher.ClientProxy", serverSide = "nova.core.wrapper.mc.forge.v17.launcher.CommonProxy")
 	public static CommonProxy proxy;
 	@Mod.Instance(id)
 	public static NovaMinecraft instance;

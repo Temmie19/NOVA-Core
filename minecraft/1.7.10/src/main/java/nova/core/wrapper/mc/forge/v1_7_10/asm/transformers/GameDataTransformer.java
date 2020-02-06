@@ -57,7 +57,7 @@ public class GameDataTransformer implements Transformer {
 
 		InsnList list = new InsnList();
 		list.add(new VarInsnNode(ALOAD, 4));
-		list.add(new MethodInsnNode(INVOKESTATIC, "nova/core/wrapper/mc/forge/v17/asm/StaticForwarder", "isNovaPrefix", "(Ljava/lang/String;)Z", false));
+		list.add(new MethodInsnNode(INVOKESTATIC, "nova/core/wrapper/mc/forge/v_1_7_10/asm/StaticForwarder", "isNovaPrefix", "(Ljava/lang/String;)Z", false));
 		list.add(new JumpInsnNode(IFNE, prev.label));
 
 		method.instructions.insert(prev, list);
