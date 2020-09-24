@@ -44,7 +44,7 @@ public class SidedEventBus<T extends CancelableEvent> extends CancelableEventBus
 		this.eventProcessor = eventProcessor;
 	}
 
-	private void add(Class<?> clazz, Side side) {
+	public void add(Class<?> clazz, Side side) {
 		if (side == Side.NONE) {
 			throw new IllegalArgumentException("Can't specify a sided event without a scope!");
 		}
@@ -124,7 +124,7 @@ public class SidedEventBus<T extends CancelableEvent> extends CancelableEventBus
 		}
 	}
 
-	public static class SidedEventListener<E extends T, T> extends TypedEventListener<E, T> {
+	protected static class SidedEventListener<E extends T, T> extends TypedEventListener<E, T> {
 
 		public final Side side;
 
